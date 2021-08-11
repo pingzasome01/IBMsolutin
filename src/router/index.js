@@ -5,6 +5,7 @@ import Case1 from '../views/Case1'
 import parents1 from '../parents/parents1'
 import parents2 from '../parents/parents2'
 import Case3 from '../views/Case3'
+import Case4 from '../views/Case4'
 
 // import Case3 from '../views/children/Case3'
 
@@ -44,6 +45,11 @@ const routes = [
             path:'/case3',
             name:'Case3',
             component: Case3
+        },
+        {
+            path:'/case4',
+            name:'Case4',
+            component: Case4
         },
         
     ]
