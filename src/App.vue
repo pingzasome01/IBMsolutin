@@ -8,11 +8,7 @@
 
 export default {
   name: 'App',
-  mounted(){
-    this.$router.push({path:'/case3'} )
-    
-    
-  }
+  
   
 }
 </script>
