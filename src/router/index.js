@@ -42,11 +42,7 @@ const routes = [
         component: parents1,
         children: [
 
-            {
-                path: '/case4',
-                name: 'Case4',
-                component: Case4
-            },
+           
            
  ]
 
@@ -59,14 +55,14 @@ const routes = [
         component: parents2
     },
     {
-        path: '/case2',
-        name: 'case2',
-        component: Case2
+        path: '/case4',
+        name: 'case4',
+        component: Case4
     },
     {
-        path: '/case1',
-        name: 'Case1',
-        component: Case1
+        path: '/case2',
+        name: 'Case2',
+        component: Case2
     },
     {
         path: '/case0',
@@ -79,6 +75,11 @@ const routes = [
         name: 'csv',
         component: csv
     },
+    {
+        path: '/case1',
+        name: 'Case1',
+        component: Case1
+    },
 
    
 
@@ -90,7 +91,7 @@ const routes = [
 const router = new VueRouter({
     routes
 })
-
+router.replace('/Case2')
 // 
 
 

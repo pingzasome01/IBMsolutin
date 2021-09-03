@@ -24,7 +24,7 @@ export default {
         left: 0;
         bottom: 0;
         width: 100%;
-        background-color:darkslategrey;
+        background-color:rgb(203, 209, 209);
         color: white;
         text-align: center;
       }

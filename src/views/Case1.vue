@@ -47,11 +47,11 @@ export default {
   left: 0;
   width: 100%;
   height: 60px;
-  border-bottom: 1px solid rgba(82, 40, 40, 0.521);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 50px;
+  
 }
 .mb{
    margin-top: 5%;

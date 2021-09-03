@@ -1,5 +1,6 @@
 <template>
-  <div class="container-fluid image">
+  <div class="container-fluid  images ">
+        <Topside-bar/>
     <div class="row">
       <div class="col">
       
@@ -10,17 +11,15 @@
 </template>
 
 <script>
+import TopsideBar from '../components/TopsideBar.vue'
 export default {
+  components: { TopsideBar },
 
 }
 </script>
 
 <style>
-.image{
-  background-color:darkslategrey;
-  min-width:1920px;
-  height: 100vh;
-  
-  }
+
+
 
 </style>
