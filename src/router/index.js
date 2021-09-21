@@ -9,7 +9,9 @@ import Case4 from '../views/Case4'
 import Case2 from '../views/Case2'
 import Case0 from '../views/Case0'
 import csv from '../views/csv'
-
+import TopsideBar from '../components/TopsideBar'
+import cdd from '../views/cdd'
+import Footer from '../components/Footer'
 
 
 // import Case3 from '../views/children/Case3'
@@ -42,13 +44,13 @@ const routes = [
         component: parents1,
         children: [
 
-           
-           
- ]
-
-
-
-},
+            
+            
+        ]
+        
+        
+        
+    },
     {
         path: '/parents2',
         name: 'Parents2',
@@ -60,16 +62,11 @@ const routes = [
         component: Case4
     },
     {
-        path: '/case2',
-        name: 'Case2',
-        component: Case2
-    },
-    {
         path: '/case0',
         name: 'Case0',
         component: Case0
     },
-
+    
     {
         path: '/csv',
         name: 'csv',
@@ -80,9 +77,31 @@ const routes = [
         name: 'Case1',
         component: Case1
     },
-
-   
-
+    {
+        path: '/TopsideBar',
+        name: 'TopsideBar',
+        component: TopsideBar
+    },
+    
+    {
+        path: '/cdd',
+        name: 'cdd',
+        component: cdd
+    },
+    
+    {
+        path: '/case2',
+        name: 'Case2',
+        component: Case2
+    },
+    {
+        path: '/Footer',
+        name: 'Footer',
+        component: Footer 
+    }
+    
+    
+    
 
 ]
 
@@ -91,8 +110,8 @@ const routes = [
 const router = new VueRouter({
     routes
 })
-router.replace('/Case2')
 // 
 
+router.replace('/Case1')
 
 export default router

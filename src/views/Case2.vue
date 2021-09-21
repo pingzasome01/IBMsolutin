@@ -1,22 +1,40 @@
 <template>
-  <div class="images">
-    <div class="container-fluid ce">
-      <div class="row">
-        <div class="col  ">
-          <input 
-            class="sizeim"
-            type="file"
-            accept=".csv, .xlsx"
-            @change="previewFiles"
-            multiple
-          />
-          <div  class="col mt-3 bd ">
-            <b-table striped hover :items="data"></b-table>
+  <div>
+    <div
+      class="col ggg bg-image"
+      style="
+        background-image: url('https://scontent.fbkk12-2.fna.fbcdn.net/v/t1.15752-9/242057289_545162860098447_6344121519166977378_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=ae9488&_nc_eui2=AeFSvZj1zSFfGUwbL5p6JB9W2HePo7Xa64TYd4-jtdrrhAQWauqlkpwzGT-aPbckn41EJ5zn-EcZekKpbohZYkfJ&_nc_ohc=iI0ZZYVaZdkAX-Wqf4-&_nc_ht=scontent.fbkk12-2.fna&oh=3a1e0222bc2255f886fb8bd63bafbe77&oe=61698786');
+        height: 100vh;
+      "
+    >
+      <topside-bar />
+      <!-- <div>
+    <b-navbar type="dark" variant="dark">
+            <b-navbar-nav>
+              <b-nav-item class="al" href="#">Revalidation</b-nav-item>
+            </b-navbar-nav>
+          </b-navbar>
+        </div>   -->
+      <div class="container-fluid ce">
+        <div class="row">
+          <div class="col bdd">
+            <input
+              class="sizeim"
+              type="file"
+              accept=".csv, .xlsx"
+              @change="previewFiles"
+              multiple
+            />
+            <div v-if="data" class="col mt-3 bd">
+              <b-table striped hover :items="data"></b-table>
+            </div>
           </div>
-        </div>
-        <div class="row-6  ">
-          <div class="col sizeex mt-3">
-            <b-button variant="danger"  @click="onExport">export xslx</b-button>
+          <div class="row-6 p-3 fixed-bottom">
+            <div class="col sizeex mt-3">
+              <b-button variant="danger" @click="onExport"
+                >export xslx</b-button
+              >
+            </div>
           </div>
         </div>
       </div>
@@ -26,11 +44,12 @@
 
 <script>
 import XLSX from "xlsx"; // import xlsx
-
+import TopsideBar from "../components/TopsideBar.vue";
 export default {
+  components: { TopsideBar },
   data() {
     return {
-      data: [],
+      data: false,
       items: [
         { age: 40, first_name: "Dickerson", last_name: "Macdonald" },
         { age: 21, first_name: "Larsen", last_name: "Shaw" },
@@ -78,8 +97,8 @@ export default {
 };
 </script>
 
-<style> 
-.images {
+<style>
+/* .images {
   background-color: rgb(230, 215, 215);
   width: 100%;
   height: 100%;
@@ -88,18 +107,15 @@ export default {
   left: 0;
   overflow: scroll;
   
-}
+} */
 .ce {
   margin-top: 5%;
 }
 .sizeex {
-  margin-left: 50%;
-  position: sticky;
-  top: -50px;
+  margin-left: 90%;
 }
 .sizeim {
   margin-left: 47%;
-  
 }
 .bd {
   border: rgb(0, 0, 0);
@@ -107,8 +123,9 @@ export default {
   margin: auto;
   overflow: scroll;
   border-width: 1px;
+}
+.ggg {
   
-  
-
+  overflow:auto;
 }
 </style>

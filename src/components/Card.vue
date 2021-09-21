@@ -48,15 +48,5 @@ export default {
 </script>
 
 <style>
-.a{
-  
-  display: inline;
 
-}
-
-.b{
-   width: 500px;
-    height: 500px;
-    display: inline;
-}
 </style>

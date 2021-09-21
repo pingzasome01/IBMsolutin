@@ -1,28 +1,25 @@
 <template>
-  <div >
-    <b-navbar type="dark" variant="dark" class="nave">
-      <b-navbar-nav>
-        <b-nav-item href="#">aedasda</b-nav-item>
-      </b-navbar-nav>
-    </b-navbar>
+  <div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col p-0">
+          <b-navbar type="dark" variant="dark">
+            <b-navbar-nav>
+              <h3 class="rstr">Revalidation of IBM Solution Delivery</h3>
+            </b-navbar-nav>
+          </b-navbar>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-export default {};
 </script>
-
 <style>
- .nave {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 60px;
-  
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 50px;
+.rstr {
+  color: cornsilk;
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 1px;
 }
 </style>

@@ -1,34 +1,34 @@
 <template>
- <div class="container">
-   <div class="row">
-     <div class="col">
-       <mdb-container  >
-                    IBM Solution Delivery: <a href="https://www.MDBootstrap.com"> www.ibm.com </a>
-      </mdb-container>
-                  
-     </div>
-   </div>
- </div>
-
+  <div class="container">
+    <div class="row ">
+      <div class="col ">
+        <footer class="bg-light text-center text-lg-start  Site  ">
+          <div
+            class="text-center p-4"
+            style="background-color: rgba(0, 0, 0, 0.2)"
+          >
+            © 2020 Copyright:
+            <a class="text-dark" href="https://mdbootstrap.com/"
+              >MDBootstrap.com</a
+            >
+          </div>
+          <!-- Copyright -->
+        </footer>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
 <style>
-  .footer {
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        background-color:rgb(203, 209, 209);
-        color: white;
-        text-align: center;
-      }
-
-
+.Site {
+ flex: 100%;
+  
+  
+  
+}
 </style>
 

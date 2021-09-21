@@ -1,57 +1,62 @@
 
 <template >
+<div class="ff">
 <div class="bgn">
-  <div class="container cd  ">
+  <div class="cc cd  ">
+    
     <div class="row mrr ">
       <div class="col-4 mm">
-        <div>
+        <div class="sl">
           <div class="card">
             <div class="imgBx">
               <img
                 src="https://scontent.fbkk12-4.fna.fbcdn.net/v/t1.15752-9/101680796_1499569420224557_2621861067856281600_n.png?_nc_cat=103&ccb=1-5&_nc_sid=ae9488&_nc_eui2=AeHtO1WdRYsd2iaWf3fkv8HhMird5CIRpDQyKt3kIhGkNEaG415mEgKUGzTK3QfXlhStb8ASdEjNsjgtYExB5JB-&_nc_ohc=keaghrsiU8kAX-EprWU&_nc_ht=scontent.fbkk12-4.fna&oh=c85cc0d8bac99bddc0a4dfe91772cf68&oe=6149D059"
               />
             </div>
-            <div class="contentBx">
-              <h2>Revalidation</h2>
-              <div>
-                <b-button class="sty" variant="danger">Confirm</b-button>
+            <div>
+              <div class="contentBx">
+                <h2>Revalidation</h2>
+                <router-link to="/csv">
+                <b-button   size="lg" variant="danger" > Go To ImportFile</b-button>
+                </router-link>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </div >
       <div class="col-4 ">
-        <div class="con1">
+        <div class="con1 sll">
           <div class="card">
             <div class="imgBx">
               <img src="https://scontent.fbkk12-1.fna.fbcdn.net/v/t1.15752-9/233199217_519293889134351_5020423556649271213_n.png?_nc_cat=101&ccb=1-5&_nc_sid=ae9488&_nc_eui2=AeGfm4qFLZRoiDd-yM8BID9zSCVorxRPbCVIJWivFE9sJZ7z8sjW9jPlSAAxfbJ_uGcga3qzEiQu0Gp2O7SsckNm&_nc_ohc=1lzHJ7I7cuwAX9kmxaP&_nc_ht=scontent.fbkk12-1.fna&oh=a1e6a83113b5a5bc816fe9240f2c76d5&oe=61490E03" />
             </div>
-            <div class="contentBx">
-              <h2>Revalidation</h2>
-              <div>
-                <b-button class="sty" variant="danger">Confirm</b-button>
+             <div class="contentBx">
+                <h2>Revalidation</h2>
+                <router-link to="/csv">
+                <b-button   size="lg" variant="danger" > Go To ImportFile</b-button>
+                </router-link>
               </div>
-            </div>
           </div>
         </div>
       </div>
-      <div class="col-4 ">
-        <div class="con2">
+      <div class="col-4  ">
+        <div class="con2 slll">
           <div class="card">
             <div class="imgBx">
               <img src="https://scontent.fbkk12-4.fna.fbcdn.net/v/t1.15752-9/232396322_556794455360128_5305406743846540393_n.png?_nc_cat=103&ccb=1-5&_nc_sid=ae9488&_nc_eui2=AeFljPTnXONLxVHALmzEPJaFpFYlAfzh9lekViUB_OH2V7utZYnCW8p3X3eZ0msMz-m2B3H6mgl_9xeRfkL0dO0u&_nc_ohc=O0G55xM88S4AX_hIQTb&_nc_ht=scontent.fbkk12-4.fna&oh=9d05fff911ffd5098597699d797d7e3d&oe=61481288" />
             </div>
             <div class="contentBx">
-              <h2>Revalidation</h2>
-              <div>
-                <b-button class="sty" variant="danger">Confirm</b-button>
+                <h2>Revalidation</h2>
+                <router-link to="/csv">
+                <b-button   size="lg" variant="danger" > Go To ImportFile</b-button>
+                </router-link>
               </div>
-            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+</div>
 </div>
 </template>
 <script>
@@ -65,22 +70,30 @@ export default {};
   font-family: "Poppins", sans-serif;
 }
 
-
-body {
+.sl{
+  margin-left: 60%;
+}
+.sll{
+  margin-left: 30%;
+}
+/* .slll{
+  margin-left: -30%;
+} */
+/* .ff{
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   background: #131313;
-}
+} */
 
-.container {
+.cc {
   position: relative;
   
  
 }
 
-.container .card {
+.cc .card {
   position: relative;
   width: 320px;
   height: 450px;
@@ -89,7 +102,7 @@ body {
   overflow: hidden;
 }
 
-.container .card:before {
+.cc .card:before {
   content: "";
   position: absolute;
   top: 0;
@@ -101,11 +114,11 @@ body {
   transition: 0.5s ease-in-out;
 }
 
-.container .card:hover:before {
+.cc .card:hover:before {
   clip-path: circle(300px at 80% -20%);
 }
 
-.container .card:after {
+.cc .card:after {
   content: "RCP";
   position: absolute;
   top: 30%;
@@ -116,7 +129,7 @@ body {
   color: rgba(71, 75, 74, 0.541);
 }
 /* จุดรูป */
-.container .card .imgBx {
+.cc .card .imgBx {
   position: absolute;
   top:45%;
   transform: translateY(-50%);
@@ -126,12 +139,12 @@ body {
   transition: 0.5s;
 }
 
-.container .card:hover .imgBx {
+.cc .card:hover .imgBx {
   top: 0%;
   transform: translateY(0%);
 }
 /* ขนาดรูป */
-.container .card .imgBx img {
+.cc .card .imgBx img {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -139,7 +152,7 @@ body {
   width: 150px;
 }
 /* ตัวอักษร */
-.container .card .contentBx {
+.cc .card .contentBx {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -149,11 +162,11 @@ body {
   z-index: 10;
 }
 
-.container .card:hover .contentBx {
+.cc .card:hover .contentBx {
   height: 210px;
 }
 
-.container .card .contentBx h2 {
+.cc .card .contentBx h2 {
   position: relative;
   font-weight: 900;
   letter-spacing: 1px;
@@ -162,8 +175,8 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.container .card .contentBx .size,
-.container .card .contentBx .color {
+.cc .card .contentBx .size,
+.cc .card .contentBx .color {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -175,20 +188,20 @@ body {
   padding-bottom: 0;
 }
 
-.container .card:hover .contentBx .size {
+.cc .card:hover .contentBx .size {
   opacity: 1;
   visibility: visible;
   transition-delay: 0.5s;
 }
 
-.container .card:hover .contentBx .color {
+.cc .card:hover .contentBx .color {
   opacity: 1;
   visibility: visible;
   transition-delay: 0.6s;
 }
 
-.container .card .contentBx .size h3,
-.container .card .contentBx .color h3 {
+.cc .card .contentBx .size h3,
+.cc .card .contentBx .color h3 {
   color: rgb(255, 255, 255);
   font-weight: 300;
   font-size: 14px;
@@ -197,7 +210,7 @@ body {
   margin-right: 10px;
 }
 
-.container .card .contentBx .size span {
+.cc .card .contentBx .size span {
   width: 26px;
   height: 26px;
   text-align: center;
@@ -205,7 +218,7 @@ body {
   font-size: 14px;
   display: inline-block;
   color: #111;
-  background: rgb(255, 255, 255);
+  background: rgb(233, 233, 233);
   margin: 0 5px;
   transition: 0.5s;
   color: #111;
@@ -213,11 +226,11 @@ body {
   cursor: pointer;
 }
 
-.container .card .contentBx .size span:hover {
+.cc .card .contentBx .size span:hover {
   background: #00ff15;
 }
 
-.container .card .contentBx .color span {
+.cc .card .contentBx .color span {
   width: 20px;
   height: 20px;
   background: #ff0;
@@ -226,43 +239,44 @@ body {
   cursor: pointer;
 }
 
-.container .card .contentBx .color span:nth-child(2) {
+.cc .card .contentBx .color span:nth-child(2) {
   background: #09ff00;
 }
 
-.container .card .contentBx .color span:nth-child(3) {
+.cc .card .contentBx .color span:nth-child(3) {
   background: #03a9f4;
 }
 
-.container .card .contentBx .color span:nth-child(4) {
+.cc .card .contentBx .color span:nth-child(4) {
   background: #e91e63;
 }
-
-.container .card .contentBx a {
+ /* ซ่อนปุ่ม */
+.cc .card .contentBx a {
   display: inline-block;
   padding: 10px 20px;
-  background: #fff;
   border-radius: 4px;
   margin-top: 10px;
   text-decoration: none;
   font-weight: 600;
-  color: #111;
+  color: rgb(255, 255, 255);
   opacity: 0;
   transform: translateY(50px);
-  transition: 0.5s;
-  margin-top: 0;
+  transition: 0.75s;
+  margin-top: 50px;
+  
 }
 
-.container .card:hover .contentBx a {
+.cc .card:hover .contentBx a {
   opacity: 1;
   transform: translateY(0px);
-  transition-delay: 0.75s;
+  transition-delay: 0.2s;
 }
 .sty {
-  margin-top: 22%;
-  background-color: teal;
-  height: 6vh;
-  width: 70%;
+  margin-top: 23%;
+ 
+  height: 5.5vh;
+  width: 65%;
+  
 }
 .con1 .card:after {
   content: "QIR";
@@ -289,16 +303,22 @@ body {
   min-width:1920px;
   height: 100vh;
 }
+
 .bgn{
-    background-color: rgb(230, 228, 228);
+    background-image: url('https://scontent.fbkk12-4.fna.fbcdn.net/v/t1.15752-9/242116394_151111890502955_5767994187639136339_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=ae9488&_nc_eui2=AeEr9-9KzKtmUicZDAZLya8B5_w-Vyyb84zn_D5XLJvzjPdND2Fvq9Rr6z9z0mVjIoZKpu0Dygegm2lRIxkz7zOT&_nc_ohc=Xg0WOSKQTu8AX9HefYE&tn=AgHGwl9uSJH1NFd_&_nc_ht=scontent.fbkk12-4.fna&oh=0885a55214c51cfee21fc3c07ff94da2&oe=616741A6');
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
-    left: 0;
+    left:0;
   }
 .cd{
-  margin-top: 270px;
+  margin-top: 20vh;
+  overflow: hidden;
+ 
 }
+
+
+
 
 </style>
