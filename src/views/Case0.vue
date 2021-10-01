@@ -17,7 +17,7 @@
               <div class="contentBx">
                 <h2>Revalidation</h2>
                 <router-link to="/csv">
-                <b-button   size="lg" variant="danger" > Go To ImportFile</b-button>
+                <b-button  class="lss"  size="lg" variant="danger" > Go To ImportFile</b-button>
                 </router-link>
               </div>
             </div>
@@ -33,7 +33,7 @@
              <div class="contentBx">
                 <h2>Revalidation</h2>
                 <router-link to="/csv">
-                <b-button   size="lg" variant="danger" > Go To ImportFile</b-button>
+                <b-button class="lss"   size="lg" variant="danger" > Go To ImportFile</b-button>
                 </router-link>
               </div>
           </div>
@@ -48,7 +48,8 @@
             <div class="contentBx">
                 <h2>Revalidation</h2>
                 <router-link to="/csv">
-                <b-button   size="lg" variant="danger" > Go To ImportFile</b-button>
+                <b-button  class="lss" size="lg" variant="danger" > Go To ImportFile</b-button>
+                
                 </router-link>
               </div>
           </div>
@@ -65,6 +66,10 @@ export default {};
 
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.lss{
+  margin-top: -20%;
+}
 
 * {
   font-family: "Poppins", sans-serif;
@@ -126,17 +131,17 @@ export default {};
   font-size: 8em;
   font-weight: 800;
   font-style: italic;
-  color: rgba(71, 75, 74, 0.541);
+  color:rgba(255, 249, 249, 0.609);
 }
 /* จุดรูป */
 .cc .card .imgBx {
   position: absolute;
-  top:45%;
+  top:40%;
   transform: translateY(-50%);
   z-index: 10000;
   width: 100%;
-  height: 220px;
-  transition: 0.5s;
+  height: 200px;
+  transition: 1s;
 }
 
 .cc .card:hover .imgBx {
@@ -163,14 +168,14 @@ export default {};
 }
 
 .cc .card:hover .contentBx {
-  height: 210px;
+  height: 160px;
 }
 
 .cc .card .contentBx h2 {
   position: relative;
   font-weight: 900;
   letter-spacing: 1px;
-  color: rgb(0, 247, 255);
+  color: rgba(245, 245, 245, 0.815);
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -286,7 +291,7 @@ export default {};
   font-size: 8em;
   font-weight: 800;
   font-style: italic;
-  color: rgba(71, 75, 74, 0.541);
+  color: rgba(255, 249, 249, 0.609);
 }
 .con2 .card:after {
   content: "GAC";
@@ -296,7 +301,7 @@ export default {};
   font-size: 8em;
   font-weight: 800;
   font-style: italic;
-  color: rgba(71, 75, 74, 0.541);
+  color: rgba(255, 249, 249, 0.609);
 }
 .image{
   background-color:darkslategrey;

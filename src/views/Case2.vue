@@ -1,12 +1,12 @@
 <template>
-  <div>
-    <div
+<div
       class="col ggg bg-image"
       style="
         background-image: url('https://scontent.fbkk12-2.fna.fbcdn.net/v/t1.15752-9/242057289_545162860098447_6344121519166977378_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=ae9488&_nc_eui2=AeFSvZj1zSFfGUwbL5p6JB9W2HePo7Xa64TYd4-jtdrrhAQWauqlkpwzGT-aPbckn41EJ5zn-EcZekKpbohZYkfJ&_nc_ohc=iI0ZZYVaZdkAX-Wqf4-&_nc_ht=scontent.fbkk12-2.fna&oh=3a1e0222bc2255f886fb8bd63bafbe77&oe=61698786');
         height: 100vh;
       "
     >
+  <div>
       <topside-bar />
       <!-- <div>
     <b-navbar type="dark" variant="dark">
@@ -26,7 +26,21 @@
               multiple
             />
             <div v-if="data" class="col mt-3 bd">
-              <b-table striped hover :items="data"></b-table>
+              <table >
+                <thead>
+                <th></th>
+                <th></th>
+                <th></th>
+                </thead>
+                <tbody>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  
+                </tbody>
+              </table>
+                          <!-- <b-table striped hover :items="data"></b-table> -->
             </div>
           </div>
           <div class="row-6 p-3 fixed-bottom">

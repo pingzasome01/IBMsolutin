@@ -12,6 +12,7 @@ import csv from '../views/csv'
 import TopsideBar from '../components/TopsideBar'
 import cdd from '../views/cdd'
 import Footer from '../components/Footer'
+import Importuni from '../views/Importuni'
 
 
 // import Case3 from '../views/children/Case3'
@@ -98,7 +99,13 @@ const routes = [
         path: '/Footer',
         name: 'Footer',
         component: Footer 
+    },
+    {
+        path: '/Importuni',
+        name: 'Importuni',
+        component:Importuni 
     }
+    
     
     
     
@@ -112,6 +119,6 @@ const router = new VueRouter({
 })
 // 
 
-router.replace('/Case1')
+router.replace('/Importuni')
 
 export default router

@@ -51,7 +51,7 @@
         </div>
         <div class="mt-3 fixed-bottom sizeex p-3">
           <div class="col mt-3 cl">
-            <b-button variant="danger" @click="onExport">export xslx</b-button>
+            <b-button variant="danger" @click="onExport">SaveAs</b-button>
           </div>
         </div>
         <!-- <div class="row">
