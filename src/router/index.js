@@ -115,6 +115,6 @@ const router = new VueRouter({
 })
 // 
 
-router.replace('/Comingsoon')
+router.replace('/Home')
 
 export default router

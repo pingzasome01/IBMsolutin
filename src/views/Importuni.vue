@@ -358,7 +358,7 @@ export default {
 </script>
 <style>
 
-.sze {
+.szee {
   margin-left: 30%;
   margin-top: 10%;
 }
