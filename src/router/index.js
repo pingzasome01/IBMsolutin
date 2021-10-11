@@ -1,16 +1,16 @@
 import Vue from "vue"
 import VueRouter from 'vue-router'
 // import LoginPage from '../views/LoginPage'
-import Case1 from '../views/Case1'
+
 import parents1 from '../parents/parents1'
 import parents2 from '../parents/parents2'
 
-import Case4 from '../views/Case4'
+import Comingsoon from '../components/Comingsoon'
 import Case2 from '../views/Case2'
 import Case0 from '../views/Case0'
 import csv from '../views/csv'
 import TopsideBar from '../components/TopsideBar'
-import cdd from '../views/cdd'
+import Home from '../views/Home'
 import Footer from '../components/Footer'
 import Importuni from '../views/Importuni'
 
@@ -58,9 +58,9 @@ const routes = [
         component: parents2
     },
     {
-        path: '/case4',
-        name: 'case4',
-        component: Case4
+        path: '/Comingsoon',
+        name: 'Comingsoon',
+        component: Comingsoon
     },
     {
         path: '/case0',
@@ -73,11 +73,7 @@ const routes = [
         name: 'csv',
         component: csv
     },
-    {
-        path: '/case1',
-        name: 'Case1',
-        component: Case1
-    },
+    
     {
         path: '/TopsideBar',
         name: 'TopsideBar',
@@ -85,9 +81,9 @@ const routes = [
     },
     
     {
-        path: '/cdd',
-        name: 'cdd',
-        component: cdd
+        path: '/Home',
+        name: 'Home',
+        component: Home
     },
     
     {
@@ -119,6 +115,6 @@ const router = new VueRouter({
 })
 // 
 
-router.replace('/Importuni')
+router.replace('/Comingsoon')
 
 export default router

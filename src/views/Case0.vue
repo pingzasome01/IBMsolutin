@@ -10,14 +10,17 @@
           <div class="card">
             <div class="imgBx">
               <img
-                src="https://scontent.fbkk12-4.fna.fbcdn.net/v/t1.15752-9/101680796_1499569420224557_2621861067856281600_n.png?_nc_cat=103&ccb=1-5&_nc_sid=ae9488&_nc_eui2=AeHtO1WdRYsd2iaWf3fkv8HhMird5CIRpDQyKt3kIhGkNEaG415mEgKUGzTK3QfXlhStb8ASdEjNsjgtYExB5JB-&_nc_ohc=keaghrsiU8kAX-EprWU&_nc_ht=scontent.fbkk12-4.fna&oh=c85cc0d8bac99bddc0a4dfe91772cf68&oe=6149D059"
+                src="../assets/pp3.png"
               />
             </div>
             <div>
               <div class="contentBx">
                 <h2>Revalidation</h2>
                 <router-link to="/csv">
-                <b-button  class="lss"  size="lg" variant="danger" > Go To ImportFile</b-button>
+                <b-button  class="lss"  size="lg" variant="danger" > Import</b-button>
+                </router-link>
+                 <router-link to="/Importuni">
+                <b-button  class="lsss"  size="lg" variant="success" > Go </b-button>
                 </router-link>
               </div>
             </div>
@@ -28,12 +31,15 @@
         <div class="con1 sll">
           <div class="card">
             <div class="imgBx">
-              <img src="https://scontent.fbkk12-1.fna.fbcdn.net/v/t1.15752-9/233199217_519293889134351_5020423556649271213_n.png?_nc_cat=101&ccb=1-5&_nc_sid=ae9488&_nc_eui2=AeGfm4qFLZRoiDd-yM8BID9zSCVorxRPbCVIJWivFE9sJZ7z8sjW9jPlSAAxfbJ_uGcga3qzEiQu0Gp2O7SsckNm&_nc_ohc=1lzHJ7I7cuwAX9kmxaP&_nc_ht=scontent.fbkk12-1.fna&oh=a1e6a83113b5a5bc816fe9240f2c76d5&oe=61490E03" />
+              <img src="../assets/pp2.png" />
             </div>
              <div class="contentBx">
                 <h2>Revalidation</h2>
                 <router-link to="/csv">
-                <b-button class="lss"   size="lg" variant="danger" > Go To ImportFile</b-button>
+                <b-button  class="lss"  size="lg" variant="danger" > Import</b-button>
+                </router-link>
+                 <router-link to="/Importuni">
+                <b-button  class="lsss"  size="lg" variant="success" > Go </b-button>
                 </router-link>
               </div>
           </div>
@@ -43,13 +49,15 @@
         <div class="con2 slll">
           <div class="card">
             <div class="imgBx">
-              <img src="https://scontent.fbkk12-4.fna.fbcdn.net/v/t1.15752-9/232396322_556794455360128_5305406743846540393_n.png?_nc_cat=103&ccb=1-5&_nc_sid=ae9488&_nc_eui2=AeFljPTnXONLxVHALmzEPJaFpFYlAfzh9lekViUB_OH2V7utZYnCW8p3X3eZ0msMz-m2B3H6mgl_9xeRfkL0dO0u&_nc_ohc=O0G55xM88S4AX_hIQTb&_nc_ht=scontent.fbkk12-4.fna&oh=9d05fff911ffd5098597699d797d7e3d&oe=61481288" />
+              <img src="../assets/pp1.png" />
             </div>
             <div class="contentBx">
-                <h2>Revalidation</h2>
-                <router-link to="/csv">
-                <b-button  class="lss" size="lg" variant="danger" > Go To ImportFile</b-button>
-                
+                <h2>Cleansing</h2>
+                <router-link to="/Comingsoon">
+                <b-button  class="lss"  size="lg" variant="danger" > Import</b-button>
+                </router-link>
+                <router-link to="/Comingsoon">
+                <b-button  class="lsss"  size="lg" variant="success" > Go </b-button>
                 </router-link>
               </div>
           </div>
@@ -69,6 +77,16 @@ export default {};
 
 .lss{
   margin-top: -20%;
+  height: 5vh;
+  width: 3cm;
+  margin-right: 14VH;
+}
+
+.lsss{
+  margin-top: -210%;
+  height: 5vh;
+  width: 3cm;
+  margin-left: 62%;
 }
 
 * {
